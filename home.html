@@ -25,6 +25,88 @@
     <title>Home - Github Issues Tracker</title>
   </head>
   <body>
-    <h2>home</h2>
+    <header>
+      <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            
+          </div>
+          <a class="ms-5 text-xl font-bold flex items-center"
+            ><img src="assets/github-logo.png" alt="" class="w-8 me-2" /> Github
+            Issues Tracker</a
+          >
+        </div>
+        <div class="navbar-end">
+          <label class="input">
+            <svg
+              class="h-[1em] opacity-50"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                stroke-width="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </g>
+            </svg>
+            <input
+              id="search-btn"
+              type="search"
+              required
+              placeholder="Search"
+            />
+          </label>
+          <a class="btn btn-primary ms-2">+ New Issue</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ******************************Toggle Btn Sections**************************** -->
+
+      <section
+        class="toggle-btn-container w-10/12 shadow-md rounded-md py-10 mt-10 mx-auto bg-gray-50"
+      >
+        <div class="p-2 ms-5">
+          <button class="btn btn-soft btn-primary">All</button>
+          <button class="btn btn-soft btn-secondary">Open</button>
+          <button class="btn btn-soft btn-secondary">Closed</button>
+        </div>
+      </section>
+
+      <!-- ******************************Main Sections**************************** -->
+
+      <section
+        class="toggle-btn-container w-10/12 shadow-md rounded-md py-10 mt-8 mx-auto bg-gray-50"
+      >
+        <div class="p-2 flex justify-between shadow-sm pb-15">
+          <div class="flex items-center ms-3">
+            <div>
+              <img src="assets/Aperture.png" alt="" />
+            </div>
+            <div class="ms-3">
+              <h3 id="issue-count" class="text-lg font-semibold">50 Issues</h3>
+              <p>Track and manage your project issues</p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center me-3">
+            <div class="flex items-center  me-2"><span class="status bg-green-600 me-2 p-1.5"></span>Open</div>
+            <div class="items-center flex "><span class="status bg-blue-600 me-2 p-1.5"></span>Closed</div>
+          </div>
+        </div>
+
+        <!-- *********************Cards**************** -->
+         <section>
+            <div>
+
+            </div>
+         </section>
+      </section>
+    </main>
   </body>
 </html>

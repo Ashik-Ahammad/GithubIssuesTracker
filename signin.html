@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <title>Github Issues Tracker</title>
   </head>
-  <body class=" mt-40 pb-15 max-w-md bg-gray-50 shadow-xl rounded-lg mx-auto">
+  <body class="mt-10 pb-15 max-w-md bg-gray-50 shadow-xl rounded-lg mx-auto">
     <div class="logo w-[100px] mx-auto pt-15">
       <img src="assets/github-logo.png" alt="Logo" />
     </div>
@@ -33,7 +33,7 @@
       <p class="text-sm text-gray-400">Sign in to manage your issues</p>
     </div>
     <div class="form pt-2">
-      <div class="card w-full max-w-sm mx-auto shrink-0 ">
+      <div class="card w-full max-w-sm mx-auto shrink-0">
         <div class="card-body">
           <fieldset class="fieldset">
             <label class="label font-bold text-black">Username</label>
@@ -41,10 +41,12 @@
               id="input-username"
               type="text"
               required
-              class="input rounded-md  w-full"
+              class="input rounded-md w-full"
               placeholder="Enter Username"
             />
-            <label class="label font-medium text-blue-700 mb-3">Default: admin</label>
+            <label class="label font-medium text-blue-700 mb-3"
+              >Default: admin</label
+            >
             <label class="label font-bold text-black">Password</label>
             <input
               id="input-password"
@@ -53,7 +55,9 @@
               class="input rounded-md w-full"
               placeholder="Enter Password"
             />
-            <label class="label font-medium text-blue-700 mb-3">Default: admin123</label>
+            <label class="label font-medium text-blue-700 mb-3"
+              >Default: admin123</label
+            >
             <button
               id="signin-btn"
               class="btn btn-primary mt-4 rounded-md w-full"
@@ -62,6 +66,25 @@
             </button>
           </fieldset>
         </div>
+      </div>
+    </div>
+    <div class="relative flex py-3 items-center px-8">
+      <div class="grow border-t border-gray-300"></div>
+      <span class="shrink mx-4 text-gray-400 text-sm">OR</span>
+      <div class="grow border-t border-gray-300"></div>
+    </div>
+
+    <div class="px-8 pb-3">
+      <div
+        class="bg-gray-100 border border-gray-100 rounded-xl p-6 text-center "
+      >
+        <p class="text-xs text-gray-400 mb-3">Demo Credentials:</p>
+        <p class="text-sm text-gray-700">
+          <span class="font-bold">Username:</span> admin
+        </p>
+        <p class="text-sm text-gray-700">
+          <span class="font-bold">Password:</span> admin123
+        </p>
       </div>
     </div>
     <script src="scripts/signin.js"></script>
