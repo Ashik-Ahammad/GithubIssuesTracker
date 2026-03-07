@@ -28,9 +28,7 @@
     <header>
       <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
-          <div class="dropdown">
-            
-          </div>
+          <div class="dropdown"></div>
           <a class="ms-5 text-xl font-bold flex items-center"
             ><img src="assets/github-logo.png" alt="" class="w-8 me-2" /> Github
             Issues Tracker</a
@@ -90,23 +88,29 @@
               <img src="assets/Aperture.png" alt="" />
             </div>
             <div class="ms-3">
-              <h3 id="issue-count" class="text-lg font-semibold">50 Issues</h3>
+              <h3 class="text-lg font-semibold"><span id="issue-count">0</span> Issues</h3>
               <p>Track and manage your project issues</p>
             </div>
           </div>
           <div class="flex justify-center items-center me-3">
-            <div class="flex items-center  me-2"><span class="status bg-green-600 me-2 p-1.5"></span>Open</div>
-            <div class="items-center flex "><span class="status bg-blue-600 me-2 p-1.5"></span>Closed</div>
+            <div class="flex items-center me-2">
+              <span class="status bg-[#00A96E] me-2 p-1.5"></span>Open
+            </div>
+            <div class="items-center flex">
+              <span class="status bg-[#A855F7] me-2 p-1.5"></span>Closed
+            </div>
           </div>
         </div>
 
         <!-- *********************Cards**************** -->
-         <section>
-            <div>
-
-            </div>
-         </section>
+        <section
+          id="issue-cards-section"
+          class="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5"
+        >
+          <!-- cards load here -->
+        </section>
       </section>
     </main>
+    <script src="scripts/home.js"></script>
   </body>
 </html>
