@@ -1,6 +1,8 @@
 const getIssueCard = () => {
   const url = "https://phi-lab-server.vercel.app/api/v1/lab/issues";
 
+  manageSpinner(true);
+
   fetch(url)
     .then((res) => res.json())
     .then((result) => {
@@ -9,7 +11,7 @@ const getIssueCard = () => {
         countElement.innerText = result.data.length;
       }
       displayCards(result.data);
-    });
+    })
 };
 
 const displayCards = (cards) => {
@@ -58,6 +60,22 @@ const displayCards = (cards) => {
 
     issueContainer.appendChild(div);
   });
+  manageSpinner(false);
 };
 
+const manageSpinner = (status) => {
+    if(status == true){
+        
+        document.getElementById("spinner").classList.remove("hidden");
+        document.getElementById("issue-cards-section").classList.add("hidden");
+    }
+    else{
+        
+        document.getElementById("spinner").classList.add("hidden");
+        document.getElementById("issue-cards-section").classList.remove("hidden");
+    }
+}
+
 getIssueCard();
+
+
