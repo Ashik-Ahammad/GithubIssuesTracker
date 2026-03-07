@@ -79,7 +79,6 @@
 
       <!-- ******************************Main Sections**************************** -->
 
-
       <section
         class="toggle-btn-container w-10/12 shadow-md rounded-md py-10 mt-8 mx-auto bg-gray-50"
       >
@@ -89,7 +88,9 @@
               <img src="assets/Aperture.png" alt="" />
             </div>
             <div class="ms-3">
-              <h3 class="text-lg font-semibold"><span id="issue-count">0</span> Issues</h3>
+              <h3 class="text-lg font-semibold">
+                <span id="issue-count">0</span> Issues
+              </h3>
               <p>Track and manage your project issues</p>
             </div>
           </div>
@@ -103,9 +104,13 @@
           </div>
         </div>
 
-        <section id="spinner" class="flex justify-center items-center py-10 hidden">
-          <span class="loading loading-bars loading-xl"></span>
+        <!-- *Spinner* -->
 
+        <section
+          id="spinner"
+          class="flex justify-center items-center py-10 hidden"
+        >
+          <span class="loading loading-bars loading-xl"></span>
         </section>
 
         <!-- *********************Cards**************** -->
@@ -114,6 +119,16 @@
           class="grid grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5"
         >
           <!-- cards load here -->
+        </section>
+
+        <section id="modal-container">
+          <!-- Open the modal using ID.showModal() method -->
+          <dialog id="issue_modal" class="modal lg:md:sm:modal-middle">
+            <div class="modal-box sm:w-11/12 md:w-10/12 lg:w-5/12 max-w-5xl">
+              <div class="modal-action">
+              </div>
+            </div>
+          </dialog>
         </section>
       </section>
     </main>
