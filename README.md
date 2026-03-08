@@ -1,4 +1,4 @@
-### Live Site: [Visit Now 🚀]() 
+### Live Site: [Visit Now 🚀](https://github-issues-tracker-web.netlify.app/) 
 
 ## 🚀 API Endpoints
 

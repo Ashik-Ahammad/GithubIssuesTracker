@@ -29,9 +29,9 @@
       <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
           <div class="dropdown"></div>
-          <a class="ms-5 text-xl font-bold flex items-center"
-            ><img src="assets/github-logo.png" alt="" class="w-8 me-2" /> Github
-            Issues Tracker</a
+          <a class="ms-5  font-bold flex items-center"
+            ><img src="assets/github-logo.png" alt="" class="w-8 me-2" />
+            <span class="lg:md:text-xl sm:text-sm"> Github Issues Tracker </span></a
           >
         </div>
         <div class="navbar-end">
@@ -53,13 +53,13 @@
               </g>
             </svg>
             <input
-              id="search-btn"
+              id="input-search"
               type="search"
               required
               placeholder="Search"
             />
           </label>
-          <a class="btn btn-primary ms-2">+ New Issue</a>
+          <button id="btn-search" class="btn btn-primary ms-2">+ New Issue</button>
         </div>
       </div>
     </header>
@@ -121,12 +121,11 @@
           <!-- cards load here -->
         </section>
 
+        <!-- * Modal Here: Open the modal using ID.showModal() method* -->
         <section id="modal-container">
-          <!-- Open the modal using ID.showModal() method -->
           <dialog id="issue_modal" class="modal lg:md:sm:modal-middle">
             <div class="modal-box sm:w-11/12 md:w-10/12 lg:w-5/12 max-w-5xl">
-              <div class="modal-action">
-              </div>
+              <div class="modal-action"></div>
             </div>
           </dialog>
         </section>
